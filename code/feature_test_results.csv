@@ -1,0 +1,42 @@
+feature,base,seq_bootstrap,weighted,shuffled,avg_uniqueness,status,error,traceback
+ret_1,0.4079617444679793,0.4003051390012544,0.4057295728533492,0.7103624681038123,0.23412641559531908,ok,,
+ret_5,0.39774076683966775,0.40363281412022567,0.4062374589956114,0.6157776847544268,0.23412641559531908,ok,,
+ret_10,0.4020067907392406,0.4979573804615607,0.407282446259623,0.5925435148702055,0.23412641559531908,ok,,
+ret_z,0.40786114001818835,0.39122392261348843,0.41555873588620024,0.695306599157302,0.23412641559531908,ok,,
+drawdown,0.42615251414442135,0.4267097220752448,0.4187282164917626,0.6159244176461118,0.23412641559531908,ok,,
+trend_slope_10,0.4607245898901515,0.497877901457623,0.4866982023956576,0.4914927512288802,0.23412641559531908,ok,,
+trend_slope_20,0.42119495083128716,0.4499257187910491,0.5331023044218015,0.4056414085583108,0.23412641559531908,ok,,
+vol_raw,0.4034673641400814,0.5387434207350721,0.5246760690313139,0.40564691308646383,0.23412641559531908,ok,,
+vol_z,0.4844996937612615,0.449417274201713,0.441630531480806,0.4021233488436346,0.23412641559531908,ok,,
+vol_trend,0.40548003540872446,0.5433698116475033,0.4115040645180643,0.4229835765476079,0.23412641559531908,ok,,
+vol_ret_interaction,0.4418718036308122,0.4743936052928107,0.3962970153362378,0.6887244043848889,0.23412641559531908,ok,,
+funding_level,0.6137240263780018,0.6812947401182695,0.6137240263780018,0.8775510204081632,0.23412641559531908,ok,,
+funding_change,0.7096642738472149,0.8329081632653061,0.7650255754475702,0.7879001675632772,0.23412641559531908,ok,,
+oi_change,0.882051282051282,0.898989898989899,0.882051282051282,0.9026737967914439,0.23412641559531908,ok,,
+oi_trend,,,,,,fail,"ValueError('Found array with 0 sample(s) (shape=(0, 1)) while a minimum of 1 is required by DecisionTreeClassifier.')","Traceback (most recent call last):
+  File ""/tmp/ipykernel_16273/2165480472.py"", line 13, in <module>
+    res = full_feature_test(
+          ^^^^^^^^^^^^^^^^^^
+  File ""/tmp/ipykernel_16273/356896460.py"", line 7, in full_feature_test
+    base_score = test_feature(feature, events, labels)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/tmp/ipykernel_16273/3258286329.py"", line 18, in test_feature
+    clf.fit(X, y, sample_weight=weights)
+  File ""/home/new/market-prediction/code/venv/lib/python3.12/site-packages/sklearn/base.py"", line 1336, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/new/market-prediction/code/venv/lib/python3.12/site-packages/sklearn/tree/_classes.py"", line 1027, in fit
+    super()._fit(
+  File ""/home/new/market-prediction/code/venv/lib/python3.12/site-packages/sklearn/tree/_classes.py"", line 255, in _fit
+    X, y = validate_data(
+           ^^^^^^^^^^^^^^
+  File ""/home/new/market-prediction/code/venv/lib/python3.12/site-packages/sklearn/utils/validation.py"", line 2914, in validate_data
+    X = check_array(X, input_name=""X"", **check_X_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/home/new/market-prediction/code/venv/lib/python3.12/site-packages/sklearn/utils/validation.py"", line 1097, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 1)) while a minimum of 1 is required by DecisionTreeClassifier.
+"
+basis_proxy,0.45415588609497426,0.5097829881355844,0.4134268922241568,0.4150181424684236,0.23412641559531908,ok,,
+sign_changes,0.48140570687417833,0.3862160512718003,0.48140570687417833,0.39175096894940625,0.23412641559531908,ok,,
+efficiency_ratio,0.5134062103872039,0.4620796970251184,0.40142389747143725,0.5197743004668559,0.23412641559531908,ok,,

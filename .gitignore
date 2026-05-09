@@ -1,0 +1,10 @@
+market-env/
+node_modules/
+.env
+docket-compose.yml
+package-lock.json
+package.json
+src/
+wallet/
+code/.ipnyb_checkpoints
+code/venv
