@@ -1,7 +1,8 @@
 market-env/
 node_modules/
 .env
-docket-compose.yml
+.gitignore
+docker-compose.yml
 package-lock.json
 package.json
 src/
